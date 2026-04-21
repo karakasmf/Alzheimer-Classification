@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "run_id": "BIOT_linear_probe_benchmark",
+    "created_at": "2026-04-21T20:35:43.778920",
+    "phase": "linear_probe_benchmark",
+    "model": "BIOT",
+    "checkpoint": "EEG-six-datasets-18-channels.ckpt",
+    "emb_size": 256,
+    "n_fft": 200,
+    "hop_length": 100,
+    "target_labels": [
+      "A",
+      "C"
+    ],
+    "n_subjects": 65,
+    "n_channels": 19
+  },
+  "global_metrics": {
+    "acc": 0.7692307692307693,
+    "bal_acc": 0.7648467432950192,
+    "mcc": 0.5317347021942951,
+    "macro_f1": 0.7656813266041816,
+    "weighted_f1": 0.7687870889024457,
+    "sens": 0.7241379310344828,
+    "spec": 0.8055555555555556
+  },
+  "global_metrics_std": {
+    "acc": 0.052818779159998226,
+    "bal_acc": 0.05424887066773242,
+    "mcc": 0.1076564672465633,
+    "macro_f1": 0.05430177833275342,
+    "weighted_f1": 0.05320772899341567,
+    "sens": 0.08587393100742093,
+    "spec": 0.06536513831464158
+  },
+  "global_metrics_formatted": {
+    "acc": "0.7692 ± 0.0528",
+    "bal_acc": "0.7648 ± 0.0542",
+    "mcc": "0.5317 ± 0.1077",
+    "macro_f1": "0.7657 ± 0.0543",
+    "weighted_f1": "0.7688 ± 0.0532",
+    "sens": "0.7241 ± 0.0859",
+    "spec": "0.8056 ± 0.0654"
+  }
+}

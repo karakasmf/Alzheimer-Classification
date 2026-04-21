@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "run_id": "run_20260202-101258",
+    "created_at": "2026-02-02T10:40:04",
+    "phase": "phase1",
+    "probe_type": "torch",
+    "target_labels": [
+      "A",
+      "C"
+    ],
+    "class_order_used": [
+      "A",
+      "C"
+    ],
+    "seed": 42,
+    "device": "cuda",
+    "reve_model_name": "brain-bzh/reve-base",
+    "reve_pos_name": "brain-bzh/reve-positions",
+    "batch_size": 256,
+    "max_train_windows_per_subj": 300,
+    "max_test_windows_per_subj": null,
+    "pooling": "mean",
+    "trim_ratio": 0.1,
+    "epochs": 30,
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "window_dir": "D:\\REPOS\\alz-ftd-ctl-reve\\cache\\windows",
+    "participants_txt": "D:\\ACADEMICS\\datasets\\alz-ftd-ctl\\ds004504\\derivatives\\participants.txt",
+    "n_subjects": 65,
+    "n_channels": 19,
+    "win_samp": 400
+  },
+  "global_metrics": {
+    "acc": 0.7538461538461538,
+    "bal_acc": 0.7509578544061303,
+    "mcc": 0.5019157088122606,
+    "macro_f1": 0.7509578544061303,
+    "weighted_f1": 0.7538461538461538,
+    "sens": 0.7241379310344828,
+    "spec": 0.7777777777777778
+  },
+  "global_metrics_std": {
+    "acc": 0.054152963279516506,
+    "bal_acc": 0.05543863360142362,
+    "mcc": 0.11028739745553588,
+    "macro_f1": 0.055225309408426224,
+    "weighted_f1": 0.054198185864549456,
+    "sens": 0.08473881472840673,
+    "spec": 0.07158291875256104
+  },
+  "global_metrics_formatted": {
+    "acc": "0.7538 ± 0.0542",
+    "bal_acc": "0.7510 ± 0.0554",
+    "mcc": "0.5019 ± 0.1103",
+    "macro_f1": "0.7510 ± 0.0552",
+    "weighted_f1": "0.7538 ± 0.0542",
+    "sens": "0.7241 ± 0.0847",
+    "spec": "0.7778 ± 0.0716"
+  }
+}

@@ -1,0 +1,31 @@
+# Core ML / Data Science
+numpy
+scipy
+scikit-learn
+pandas
+matplotlib
+seaborn
+tqdm
+joblib
+
+# Deep Learning (PyTorch — install separately with CUDA build if needed)
+# Visit https://pytorch.org/get-started/locally/ for your CUDA version
+torch
+torchvision
+
+# EEG preprocessing
+mne
+
+# Transformers (REVE foundation model from HuggingFace)
+transformers
+huggingface-hub
+
+# LaBraM dependencies
+timm==0.4.12
+einops
+
+# BIOT dependencies
+linear-attention-transformer
+
+# Statistical testing
+statsmodels
