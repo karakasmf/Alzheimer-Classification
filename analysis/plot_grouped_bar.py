@@ -34,14 +34,14 @@ from reve_pipeline.common.paths import REPO_ROOT, RESULTS_ROOT
 # ---------------------------------------------------------------------------
 MODELS = [
     ("REVE Baseline",  RESULTS_ROOT / "A-C" / "baseline_results",         "fixed"),
-    ("REVE End2End",   RESULTS_ROOT / "A-C",                               "latest_end2end"),
+    ("REVE + C2C",   RESULTS_ROOT / "A-C",                               "latest_end2end"),
     ("LEAD",           REPO_ROOT / "benchmark" / "lead"   / "results",     "fixed"),
     ("LaBraM",         REPO_ROOT / "benchmark" / "LaBraM" / "results",     "fixed"),
     ("BIOT",           REPO_ROOT / "benchmark" / "BIOT"   / "results",     "fixed"),
 ]
 
 METRICS       = ["acc", "mcc", "macro_f1", "sens", "spec"]
-METRIC_LABELS = ["Accuracy", "MCC", "Macro F1", "Sensitivity", "Specificity"]
+METRIC_LABELS = ["Accuracy", "MCC", "Macro F1","Specificity", "Sensitivity"]
 OUTPUT_PLOT   = RESULTS_ROOT / "grouped_metrics_barplot.png"
 
 
@@ -120,7 +120,7 @@ def main():
                 )
 
     ax.set_ylabel("Score", fontsize=12, fontweight="bold")
-    ax.set_title("Model Comparison (A vs C)", fontsize=14, fontweight="bold")
+    ax.set_title("Model Comparison (Alzheimer's vs Healthy Controls)", fontsize=14, fontweight="bold")
     ax.set_xticks(x)
     ax.set_xticklabels(METRIC_LABELS, fontsize=11, fontweight="bold")
     ax.set_ylim(0, 1.22)
