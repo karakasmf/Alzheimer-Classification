@@ -1,3 +1,6 @@
+**Citation:** 
+
+
 # Alzheimer Classification
 
 > A Python-based EEG classification pipeline for Alzheimer's Disease (AD) vs. Frontotemporal Dementia (FTD) vs. Healthy Controls (CTL), benchmarking foundation models alongside a custom REVE-based approach.
@@ -158,26 +161,9 @@ python analysis/statistical_test_all.py  # → Permutation test
 | **BIOT** | NeurIPS 2023 | `benchmark/BIOT/repo/pretrained-models/` |
 | **REVE** | — | HuggingFace `brain-bzh/reve-base` |
 
-## Citation
-
-If you use this codebase, please also cite the corresponding foundation model papers:
-
-```bibtex
-@inproceedings{yang2023biot,
-  title={BIOT: Biosignal Transformer for Cross-data Learning in the Wild},
-  author={Yang, Chaoqi and Westover, M Brandon and Sun, Jimeng},
-  booktitle={NeurIPS},
-  year={2023}
-}
-
-@inproceedings{jiang2024labram,
-  title={Large Brain Model for Learning Generic Representations with Tremendous EEG Data in BCI},
-  author={Jiang, Wei and others},
-  booktitle={ICLR},
-  year={2024}
-}
-```
-
 ## License
 
 MIT
+
+
+> Generative AI models were used to assist with code organization, refactoring, and review during the development process.
