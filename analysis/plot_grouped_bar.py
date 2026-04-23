@@ -41,7 +41,7 @@ MODELS = [
 ]
 
 METRICS       = ["acc", "mcc", "macro_f1", "sens", "spec"]
-METRIC_LABELS = ["Accuracy", "MCC", "Macro F1","Specificity", "Sensitivity"]
+METRIC_LABELS = ["Accuracy", "MCC", "Macro F1", "Sensitivity", "Specificity"]
 OUTPUT_PLOT   = RESULTS_ROOT / "grouped_metrics_barplot.png"
 
 

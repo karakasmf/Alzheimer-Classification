@@ -29,8 +29,9 @@ def compute_metrics(y_true: np.ndarray, y_pred: np.ndarray, n_classes: int) -> D
         fp = int(((y_true == 0) & (y_pred == 1)).sum())
         fn = int(((y_true == 1) & (y_pred == 0)).sum())
         tp = int(((y_true == 1) & (y_pred == 1)).sum())
-        sens = 0.0 if (tp + fn) == 0 else float(tp / (tp + fn))
-        spec = 0.0 if (tn + fp) == 0 else float(tn / (tn + fp))
+        # class 0 = A (Alzheimer's) is positive; sens = recall for A, spec = recall for C
+        sens = 0.0 if (tn + fp) == 0 else float(tn / (tn + fp))
+        spec = 0.0 if (tp + fn) == 0 else float(tp / (tp + fn))
         out.update({"sens": sens, "spec": spec})
 
     return out
