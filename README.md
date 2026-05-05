@@ -1,5 +1,7 @@
 **Citation:** 
+Karakaş, M. F., (2026). Subject-Independent Alzheimer’s Disease Classification From EEG Signals Using A Pretrained Foundation Model With Learnable Channel-To-Channel Attention.  Enginoscope , no.2, 1-16.    
 
+https://dergipark.org.tr/en/pub/enginoscope/article/1882868
 
 # Alzheimer Classification
 
